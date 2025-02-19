@@ -415,7 +415,6 @@ nav.show div.icon-close {
   word-break: break-word;
   display: flex;
   align-items: center;
-  white-space: pre;
 }
 
 /* Paginação */
@@ -433,11 +432,11 @@ nav.show div.icon-close {
   border: none;
   cursor: pointer;
   border-radius: 0.25rem;
-  font-size: 1.2rem; /* Maior para melhor legibilidade */
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem; /* Tamanho fixo para manter o layout */
+  width: 2.5rem;
   height: 2.5rem;
   user-select: none;
 }
