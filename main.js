@@ -55,12 +55,14 @@ const scrollReveal = ScrollReveal({
   reset: true
 })
 
+//  #testimonials .testimonials,
+//#contact .text, 
 scrollReveal.reveal(
   `#home .image, #home .text,
   #about .image, #about .text,
   #services header, #services .card,
-  #testimonials header, #testimonials .testimonials
-  #contact .text, #contact .links,
+  #testimonials header, 
+  #contact .links,
   footer .brand, footer .social
   `,
   { interval: 100 }
@@ -108,3 +110,138 @@ window.addEventListener('scroll', function () {
   backToTop()
   activateMenuAtCurrentSection()
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cardsWrapper = document.querySelector(".cards-wrapper");
+  const prevButtons = document.querySelectorAll(".prev");
+  const nextButtons = document.querySelectorAll(".next");
+  const pageIndicators = document.querySelectorAll(".page-indicator");
+
+  const cardsData = [
+    [
+      { letter: "I", text: "magem linda que me encanta" },
+      { letter: "B", text: "eijando a serra ao seu redor" },
+      { letter: "I", text: "dolatro essa terra querida" },
+      { letter: "A", text: "inda que eu não esteja só." },
+      { letter: "J", text: "amais esquecerei sua doçura" },
+      { letter: "A", text: " encantar meu coração" },
+      { letter: "R", text: "ogo a Deus todos os dias por" },
+      { letter: "A", text: "mor, paz e consolação." },
+      { letter: "M", text: "iro a tarde no horizonte" },
+      { letter: "E", text: " sinto meu coração palpitar" },
+      { letter: "U", text: "ma alegria a me contagiar" },
+      { letter: "A", text: "mo esse lugar enigmático" },
+      { letter: "M", text: "ístico e varonil" },
+      { letter: "O", text: "rvalho da minha existência" },
+      { letter: "R", text: "etrato do meu Brazil." },
+    ],
+    [
+      { letter: "I", text: "magem linda que me encanta" },
+      { letter: "B", text: "eijando a serra ao seu redor" },
+      { letter: "I", text: "dolatro essa terra querida" },
+      { letter: "A", text: "inda que eu não esteja só." },
+      { letter: "J", text: "amais esquecerei sua doçura" },
+      { letter: "A", text: " encantar meu coração" },
+      { letter: "R", text: "ogo a Deus todos os dias por" },
+      { letter: "A", text: "mor, paz e consolação." },
+      { letter: "M", text: "iro a tarde no horizonte" },
+      { letter: "E", text: " sinto meu coração palpitar" },
+      { letter: "U", text: "ma alegria a me contagiar" },
+      { letter: "A", text: "mo esse lugar enigmático" },
+      { letter: "M", text: "ístico e varonil" },
+      { letter: "O", text: "rvalho da minha existência" },
+      { letter: "R", text: "etrato do meu Brazil." },
+    ],
+    [
+      { letter: "I", text: "magem linda que me encanta" },
+      { letter: "B", text: "eijando a serra ao seu redor" },
+      { letter: "I", text: "dolatro essa terra querida" },
+      { letter: "A", text: "inda que eu não esteja só." },
+      { letter: "J", text: "amais esquecerei sua doçura" },
+      { letter: "A", text: " encantar meu coração" },
+      { letter: "R", text: "ogo a Deus todos os dias por" },
+      { letter: "A", text: "mor, paz e consolação." },
+      { letter: "M", text: "iro a tarde no horizonte" },
+      { letter: "E", text: " sinto meu coração palpitar" },
+      { letter: "U", text: "ma alegria a me contagiar" },
+      { letter: "A", text: "mo esse lugar enigmático" },
+      { letter: "M", text: "ístico e varonil" },
+      { letter: "O", text: "rvalho da minha existência" },
+      { letter: "R", text: "etrato do meu Brazil." },
+    ],
+    [
+      { letter: "I", text: "magem linda que me encanta" },
+      { letter: "B", text: "eijando a serra ao seu redor" },
+      { letter: "I", text: "dolatro essa terra querida" },
+      { letter: "A", text: "inda que eu não esteja só." },
+      { letter: "J", text: "amais esquecerei sua doçura" },
+      { letter: "A", text: " encantar meu coração" },
+      { letter: "R", text: "ogo a Deus todos os dias por" },
+      { letter: "A", text: "mor, paz e consolação." },
+      { letter: "M", text: "iro a tarde no horizonte" },
+      { letter: "E", text: " sinto meu coração palpitar" },
+      { letter: "U", text: "ma alegria a me contagiar" },
+      { letter: "A", text: "mo esse lugar enigmático" },
+      { letter: "M", text: "ístico e varonil" },
+      { letter: "O", text: "rvalho da minha existência" },
+      { letter: "R", text: "etrato do meu Brazil." },
+    ],
+  ];
+
+  let currentPage = 0;
+
+  function renderPage(pageIndex) {
+    cardsWrapper.innerHTML = "";
+    const pageData = cardsData[pageIndex];
+
+    const cardsGrid = document.createElement("div");
+    cardsGrid.classList.add("cards", "grid");
+
+    pageData.forEach(({ letter, text }) => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+
+      const titleDiv = document.createElement("div");
+      titleDiv.classList.add("title");
+      titleDiv.innerHTML = `<h3>${letter}</h3>`;
+
+      const contentDiv = document.createElement("div");
+      contentDiv.classList.add("content-text");
+      contentDiv.innerHTML = `<p>${text}</p>`;
+
+      card.appendChild(titleDiv);
+      card.appendChild(contentDiv);
+      cardsGrid.appendChild(card);
+    });
+
+    cardsWrapper.appendChild(cardsGrid);
+    updatePagination();
+    scrollReveal.reveal(".card", { interval: 100 });
+  }
+
+  function updatePagination() {
+    prevButtons.forEach(button => button.disabled = currentPage === 0);
+    nextButtons.forEach(button => button.disabled = currentPage === cardsData.length - 1);
+    pageIndicators.forEach(indicator => indicator.textContent = `${currentPage + 1} / ${cardsData.length}`);
+  }
+
+  prevButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      if (currentPage > 0) {
+        currentPage -= 1;
+        renderPage(currentPage);
+      }
+    });
+  });
+
+  nextButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      if (currentPage < cardsData.length - 1) {
+        currentPage += 1;
+        renderPage(currentPage);
+      }
+    });
+  });
+
+  renderPage(currentPage);
+});

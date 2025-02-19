@@ -347,31 +347,6 @@ nav.show div.icon-close {
 /* .cards.grid {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  align-items: stretch;
-}
-
-.card {
-  display: flex;
-}
-
-.card .title {
-  padding: 3.625rem 2rem;
-  width: fit-content;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-bottom: 0.25rem solid var(--base-color);
-  border-radius: 0.25rem 0.25rem 0 0;
-  text-align: center;
-}
-
-.card .title h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-} */
-
-.cards.grid {
-  display: flex;
-  flex-direction: column;
   gap: 3rem;
   align-items: stretch;
 }
@@ -405,8 +380,87 @@ nav.show div.icon-close {
   flex-grow: 1;
   text-align: left;
   white-space: pre;
+} */
+
+.cards-wrapper {
+  width: 100%;
+  min-height: 300px; /* Para evitar saltos de layout */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
 }
 
+.cards.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Esconder os grids não ativos */
+.cards.grid.hidden {
+  display: none;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.card .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 4.5rem;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.25rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card .title h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.card .content-text {
+  flex-grow: 1;
+  text-align: left;
+  white-space: pre;
+}
+
+/* Paginação */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  background-color: var(--base-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.pagination button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.page-indicator {
+  font-weight: bold;
+}
 
 /*====  TESTIMONIALS ============================ */
 #testimonials {
