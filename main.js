@@ -118,94 +118,68 @@ document.addEventListener("DOMContentLoaded", () => {
   const pageIndicators = document.querySelectorAll(".page-indicator");
 
   const cardsData = [
-    [
-      { letter: "I", text: "magem linda que me encanta" },
-      { letter: "B", text: "eijando a serra ao seu redor" },
-      { letter: "I", text: "dolatro essa terra querida" },
-      { letter: "A", text: "inda que eu não esteja só." },
-      { letter: "J", text: "amais esquecerei sua doçura" },
-      { letter: "A", text: " encantar meu coração" },
-      { letter: "R", text: "ogo a Deus todos os dias por" },
-      { letter: "A", text: "mor, paz e consolação." },
-      { space: true },
-      { letter: "M", text: "iro a tarde no horizonte" },
-      { letter: "E", text: " sinto meu coração palpitar" },
-      { letter: "U", text: "ma alegria a me contagiar" },
-      { space: true },
-      { letter: "A", text: "mo esse lugar enigmático" },
-      { letter: "M", text: "ístico e varonil" },
-      { letter: "O", text: "rvalho da minha existência" },
-      { letter: "R", text: "etrato do meu Brazil." },
-    ],
-    [
-      { letter: "I", text: "magem linda que me encanta magem" },
-      { letter: "B", text: "eijando a serra ao seu redor" },
-      { letter: "I", text: "dolatro essa terra querida" },
-      { letter: "A", text: "inda que eu não esteja só." },
-      { letter: "J", text: "amais esquecerei sua doçura" },
-      { letter: "A", text: " encantar meu coração" },
-      { letter: "R", text: "ogo a Deus todos os dias por" },
-      { letter: "A", text: "mor, paz e consolação." },
-      { space: true },
-      { letter: "M", text: "iro a tarde no horizonte" },
-      { letter: "E", text: " sinto meu coração palpitar" },
-      { letter: "U", text: "ma alegria a me contagiar" },
-      { space: true },
-      { letter: "A", text: "mo esse lugar enigmático" },
-      { letter: "M", text: "ístico e varonil" },
-      { letter: "O", text: "rvalho da minha existência" },
-      { letter: "R", text: "etrato do meu Brazil." },
-    ],
-    [
-      { letter: "I", text: "magem linda que me encanta" },
-      { letter: "B", text: "eijando a serra ao seu redor" },
-      { letter: "I", text: "dolatro essa terra querida" },
-      { letter: "A", text: "inda que eu não esteja só." },
-      { letter: "J", text: "amais esquecerei sua doçura" },
-      { letter: "A", text: " encantar meu coração" },
-      { letter: "R", text: "ogo a Deus todos os dias por" },
-      { letter: "A", text: "mor, paz e consolação." },
-      { space: true },
-      { letter: "M", text: "iro a tarde no horizonte" },
-      { letter: "E", text: " sinto meu coração palpitar" },
-      { letter: "U", text: "ma alegria a me contagiar" },
-      { space: true },
-      { letter: "A", text: "mo esse lugar enigmático" },
-      { letter: "M", text: "ístico e varonil" },
-      { letter: "O", text: "rvalho da minha existência" },
-      { letter: "R", text: "etrato do meu Brazil." },
-    ],
-    [
-      { letter: "I", text: "magem linda que me encanta" },
-      { letter: "B", text: "eijando a serra ao seu redor" },
-      { letter: "I", text: "dolatro essa terra querida" },
-      { letter: "A", text: "inda que eu não esteja só." },
-      { letter: "J", text: "amais esquecerei sua doçura" },
-      { letter: "A", text: " encantar meu coração" },
-      { letter: "R", text: "ogo a Deus todos os dias por" },
-      { letter: "A", text: "mor, paz e consolação." },
-      { space: true },
-      { letter: "M", text: "iro a tarde no horizonte" },
-      { letter: "E", text: " sinto meu coração palpitar" },
-      { letter: "U", text: "ma alegria a me contagiar" },
-      { space: true },
-      { letter: "A", text: "mo esse lugar enigmático" },
-      { letter: "M", text: "ístico e varonil" },
-      { letter: "O", text: "rvalho da minha existência" },
-      { letter: "R", text: "etrato do meu Brazil." },
-    ],
+    {
+      author: "Diógenes Cândido de Lima",
+      acrostico: [
+        { letter: "I", text: "magem linda que me encanta" },
+        { letter: "B", text: "eijando a serra ao seu redor" },
+        { letter: "I", text: "dolatro essa terra querida" },
+        { letter: "A", text: "inda que eu não esteja só." },
+        { letter: "J", text: "amais esquecerei sua doçura" },
+        { letter: "A", text: " encantar meu coração" },
+        { letter: "R", text: "ogo a Deus todos os dias por" },
+        { letter: "A", text: "mor, paz e consolação." },
+        { space: true },
+        { letter: "M", text: "iro a tarde no horizonte" },
+        { letter: "E", text: " sinto meu coração palpitar" },
+        { letter: "U", text: "ma alegria a me contagiar" },
+        { space: true },
+        { letter: "A", text: "mo esse lugar enigmático" },
+        { letter: "M", text: "ístico e varonil" },
+        { letter: "O", text: "rvalho da minha existência" },
+        { letter: "R", text: "etrato do meu Brazil." },
+      ]
+    },
+    {
+      author: "Manoel Prado",
+      acrostico: [
+        { letter: "I", text: "example example example example example example example example example" },
+        { letter: "B", text: "example example example example example example example example example" },
+        { letter: "I", text: "example example example example example example example example example" },
+        { letter: "A", text: "example example example example example example example example example" },
+        { letter: "J", text: "example example example example example example example example example" },
+        { letter: "A", text: "example example example example example example example example example" },
+        { letter: "R", text: "example example example example example example example example example" },
+        { letter: "A", text: "example example example example example example example example example" },
+        { space: true },
+        { letter: "M", text: "example example example example example example example example example" },
+        { letter: "E", text: "example example example example example example example example example" },
+        { letter: "U", text: "example example example example example example example example example" },
+        { space: true },
+        { letter: "A", text: "example example example example example example example example example" },
+        { letter: "M", text: "example example example example example example example example example" },
+        { letter: "O", text: "example example example example example example example example example" },
+        { letter: "R", text: "example example example example example example example example example" },
+      ]
+    }
   ];
 
   let currentPage = 0;
 
   function renderPage(pageIndex) {
     cardsWrapper.innerHTML = "";
-    const pageData = cardsData[pageIndex];
+    const { author, acrostico } = cardsData[pageIndex];
 
     const cardsGrid = document.createElement("div");
     cardsGrid.classList.add("cards", "grid");
 
-    pageData.forEach(({ letter, text, space }) => {
+    const authorDiv = document.createElement("div");
+    authorDiv.classList.add("author");
+    authorDiv.innerHTML = `<span>${author}</span>`;
+
+    cardsGrid.appendChild(authorDiv);
+
+    acrostico.map(({ letter, text, space }) => {
       if(space) {
         const card = document.createElement("br");
 
@@ -227,6 +201,11 @@ document.addEventListener("DOMContentLoaded", () => {
         cardsGrid.appendChild(card);
       }
     });
+
+    const authorDiv2 = document.createElement("div");
+    authorDiv2.classList.add("author");
+    authorDiv2.innerHTML = `<span>${author}</span>`;
+    cardsGrid.appendChild(authorDiv2);
 
     cardsWrapper.appendChild(cardsGrid);
     updatePagination();

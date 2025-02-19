@@ -372,6 +372,16 @@ nav.show div.icon-close {
   display: none;
 }
 
+.author {
+  font-family: "Dancing Script", cursive; /* Fonte manuscrita bonita */
+  font-size: 1.2rem; /* Tamanho adequado para assinatura */
+  font-style: italic;
+  font-weight: bold;
+  color: #555; /* Tom levemente escuro para elegância */
+  text-align: right; /* Alinha à direita, como uma assinatura */
+  margin-top: 0.5rem; /* Espaço superior */
+}
+
 .card {
   display: flex;
   align-items: stretch;
