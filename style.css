@@ -415,6 +415,7 @@ nav.show div.icon-close {
   word-break: break-word;
   display: flex;
   align-items: center;
+  white-space: pre;
 }
 
 /* Paginação */
@@ -423,21 +424,28 @@ nav.show div.icon-close {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 1rem;
 }
 
-.pagination button {
+.pagination a {
   padding: 0.5rem 1rem;
   background-color: var(--base-color);
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 0.25rem;
+  font-size: 1.2rem; /* Maior para melhor legibilidade */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem; /* Tamanho fixo para manter o layout */
+  height: 2.5rem;
+  user-select: none;
 }
 
-.pagination button:disabled {
+.pagination a:disabled {
   background-color: gray;
   cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .page-indicator {
