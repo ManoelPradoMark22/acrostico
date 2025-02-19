@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { letter: "R", text: "etrato do meu Brazil." },
     ],
     [
-      { letter: "I", text: "magem linda que me encanta" },
+      { letter: "I", text: "magem linda que me encanta magem" },
       { letter: "B", text: "eijando a serra ao seu redor" },
       { letter: "I", text: "dolatro essa terra querida" },
       { letter: "A", text: "inda que eu não esteja só." },
