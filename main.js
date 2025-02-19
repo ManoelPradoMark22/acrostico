@@ -127,9 +127,11 @@ document.addEventListener("DOMContentLoaded", () => {
       { letter: "A", text: " encantar meu coração" },
       { letter: "R", text: "ogo a Deus todos os dias por" },
       { letter: "A", text: "mor, paz e consolação." },
+      { space: true },
       { letter: "M", text: "iro a tarde no horizonte" },
       { letter: "E", text: " sinto meu coração palpitar" },
       { letter: "U", text: "ma alegria a me contagiar" },
+      { space: true },
       { letter: "A", text: "mo esse lugar enigmático" },
       { letter: "M", text: "ístico e varonil" },
       { letter: "O", text: "rvalho da minha existência" },
@@ -144,9 +146,11 @@ document.addEventListener("DOMContentLoaded", () => {
       { letter: "A", text: " encantar meu coração" },
       { letter: "R", text: "ogo a Deus todos os dias por" },
       { letter: "A", text: "mor, paz e consolação." },
+      { space: true },
       { letter: "M", text: "iro a tarde no horizonte" },
       { letter: "E", text: " sinto meu coração palpitar" },
       { letter: "U", text: "ma alegria a me contagiar" },
+      { space: true },
       { letter: "A", text: "mo esse lugar enigmático" },
       { letter: "M", text: "ístico e varonil" },
       { letter: "O", text: "rvalho da minha existência" },
@@ -161,9 +165,11 @@ document.addEventListener("DOMContentLoaded", () => {
       { letter: "A", text: " encantar meu coração" },
       { letter: "R", text: "ogo a Deus todos os dias por" },
       { letter: "A", text: "mor, paz e consolação." },
+      { space: true },
       { letter: "M", text: "iro a tarde no horizonte" },
       { letter: "E", text: " sinto meu coração palpitar" },
       { letter: "U", text: "ma alegria a me contagiar" },
+      { space: true },
       { letter: "A", text: "mo esse lugar enigmático" },
       { letter: "M", text: "ístico e varonil" },
       { letter: "O", text: "rvalho da minha existência" },
@@ -178,9 +184,11 @@ document.addEventListener("DOMContentLoaded", () => {
       { letter: "A", text: " encantar meu coração" },
       { letter: "R", text: "ogo a Deus todos os dias por" },
       { letter: "A", text: "mor, paz e consolação." },
+      { space: true },
       { letter: "M", text: "iro a tarde no horizonte" },
       { letter: "E", text: " sinto meu coração palpitar" },
       { letter: "U", text: "ma alegria a me contagiar" },
+      { space: true },
       { letter: "A", text: "mo esse lugar enigmático" },
       { letter: "M", text: "ístico e varonil" },
       { letter: "O", text: "rvalho da minha existência" },
@@ -197,21 +205,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardsGrid = document.createElement("div");
     cardsGrid.classList.add("cards", "grid");
 
-    pageData.forEach(({ letter, text }) => {
-      const card = document.createElement("div");
-      card.classList.add("card");
+    pageData.forEach(({ letter, text, space }) => {
+      if(space) {
+        const card = document.createElement("br");
 
-      const titleDiv = document.createElement("div");
-      titleDiv.classList.add("title");
-      titleDiv.innerHTML = `<h3>${letter}</h3>`;
-
-      const contentDiv = document.createElement("div");
-      contentDiv.classList.add("content-text");
-      contentDiv.innerHTML = `<p>${text}</p>`;
-
-      card.appendChild(titleDiv);
-      card.appendChild(contentDiv);
-      cardsGrid.appendChild(card);
+        cardsGrid.appendChild(card);
+      }else {
+        const card = document.createElement("div");
+        card.classList.add("card");
+  
+        const titleDiv = document.createElement("div");
+        titleDiv.classList.add("title");
+        titleDiv.innerHTML = `<h3>${letter}</h3>`;
+  
+        const contentDiv = document.createElement("div");
+        contentDiv.classList.add("content-text");
+        contentDiv.innerHTML = `<p>${text}</p>`;
+  
+        card.appendChild(titleDiv);
+        card.appendChild(contentDiv);
+        cardsGrid.appendChild(card);
+      }
     });
 
     cardsWrapper.appendChild(cardsGrid);
