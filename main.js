@@ -55,13 +55,11 @@ const scrollReveal = ScrollReveal({
   reset: true
 })
 
-//  #testimonials .testimonials,
-//#contact .text, 
 scrollReveal.reveal(
-  `#home .image, #home .text,
-  #about .image, #about .text,
-  #services header, #services .card,
-  #testimonials header, 
+  `#inicio .image, #inicio .text,
+  #sobre .image, #sobre .text,
+  #acrosticos header, #acrosticos .card,
+  #enviar header, 
   #contact .links,
   footer .brand, footer .social
   `,
@@ -141,25 +139,25 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     {
-      author: "Manoel Prado",
+      author: "Pode ser você",
       acrostico: [
-        { letter: "I", text: "example example example example example example example example example" },
-        { letter: "B", text: "example example example example example example example example example" },
-        { letter: "I", text: "example example example example example example example example example" },
-        { letter: "A", text: "example example example example example example example example example" },
-        { letter: "J", text: "example example example example example example example example example" },
-        { letter: "A", text: "example example example example example example example example example" },
-        { letter: "R", text: "example example example example example example example example example" },
-        { letter: "A", text: "example example example example example example example example example" },
+        { letter: "I", text: "exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo" },
+        { letter: "B", text: "exemplo exemplo exemplo" },
+        { letter: "I", text: "exemplo exemplo exemplo exemplo exemplo exemplo" },
+        { letter: "A", text: "exemplo exemplo exemplo exemplo exemplo" },
+        { letter: "J", text: "exemplo exemplo exemplo exemplo exemplo exemplo" },
+        { letter: "A", text: "exemplo exemplo exemplo exemplo" },
+        { letter: "R", text: "exemplo exemplo exemplo" },
+        { letter: "A", text: "exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo" },
         { space: true },
-        { letter: "M", text: "example example example example example example example example example" },
-        { letter: "E", text: "example example example example example example example example example" },
-        { letter: "U", text: "example example example example example example example example example" },
+        { letter: "M", text: "exemplo exemplo exemplo exemplo exemplo exemplo" },
+        { letter: "E", text: "exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo" },
+        { letter: "U", text: "exemplo exemplo exemplo exemplo exemplo exemplo" },
         { space: true },
-        { letter: "A", text: "example example example example example example example example example" },
-        { letter: "M", text: "example example example example example example example example example" },
-        { letter: "O", text: "example example example example example example example example example" },
-        { letter: "R", text: "example example example example example example example example example" },
+        { letter: "A", text: "exemplo exemplo exemplo exemplo exemplo" },
+        { letter: "M", text: "exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo" },
+        { letter: "O", text: "exemplo exemplo exemplo exemplo exemplo exemplo exemplo" },
+        { letter: "R", text: "exemplo exemplo exemplo" },
       ]
     }
   ];
