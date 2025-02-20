@@ -449,6 +449,7 @@ nav.show div.icon-close {
 
 .page-indicator {
   font-weight: bold;
+  font-variant-numeric: tabular-nums;
 }
 
 /*====  TESTIMONIALS ============================ */
