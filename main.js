@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { letter: "A", text: "mo esse lugar enigmático" },
         { letter: "M", text: "ístico e varonil" },
         { letter: "O", text: "rvalho da minha existência" },
-        { letter: "R", text: "etrato do meu Brazil." },
+        { letter: "R", text: "etrato do meu Brasil." },
       ]
     },
     {
