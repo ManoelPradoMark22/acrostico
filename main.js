@@ -139,25 +139,25 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     {
-      author: "Pode ser você",
+      author: "Eduardo Silva Souza (Du)",
       acrostico: [
-        { letter: "I", text: "exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo" },
-        { letter: "B", text: "exemplo exemplo exemplo" },
-        { letter: "I", text: "exemplo exemplo exemplo exemplo exemplo exemplo" },
-        { letter: "A", text: "exemplo exemplo exemplo exemplo exemplo" },
-        { letter: "J", text: "exemplo exemplo exemplo exemplo exemplo exemplo" },
-        { letter: "A", text: "exemplo exemplo exemplo exemplo" },
-        { letter: "R", text: "exemplo exemplo exemplo" },
-        { letter: "A", text: "exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo" },
+        { letter: "I", text: "nspiração de grandes montes" },
+        { letter: "B", text: "enção é esse lugar" },
+        { letter: "I", text: "mportante é ser feliz" },
+        { letter: "A", text: "ndando firme sem parar" },
+        { letter: "J", text: "óia rara do patrimônio" },
+        { letter: "A", text: "vançando para o bem" },
+        { letter: "R", text: "ica na história" },
+        { letter: "A", text: "mada por mais de cem." },
         { space: true },
-        { letter: "M", text: "exemplo exemplo exemplo exemplo exemplo exemplo" },
-        { letter: "E", text: "exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo" },
-        { letter: "U", text: "exemplo exemplo exemplo exemplo exemplo exemplo" },
+        { letter: "M", text: "orro do cruzeiro" },
+        { letter: "E", text: "ternamente bem lembrado" },
+        { letter: "U", text: "ma vez ao ano é visitado." },
         { space: true },
-        { letter: "A", text: "exemplo exemplo exemplo exemplo exemplo" },
-        { letter: "M", text: "exemplo exemplo exemplo exemplo exemplo exemplo exemplo exemplo" },
-        { letter: "O", text: "exemplo exemplo exemplo exemplo exemplo exemplo exemplo" },
-        { letter: "R", text: "exemplo exemplo exemplo" },
+        { letter: "A", text: "mo Ibiajara" },
+        { letter: "M", text: "uito de coração" },
+        { letter: "O", text: "uro de minha pátria" },
+        { letter: "R", text: "ainha do ser cristão." }
       ]
     }
   ];
