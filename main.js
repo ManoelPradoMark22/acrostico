@@ -159,6 +159,28 @@ document.addEventListener("DOMContentLoaded", () => {
         { letter: "O", text: "uro de minha pátria" },
         { letter: "R", text: "ainha do ser cristão." }
       ]
+    },
+    {
+      author: "Nimate Araújo",
+      acrostico: [
+        { letter: "I", text: "menso céu que me faz sonhar," },
+        { letter: "B", text: "rilho dourado no amanhecer," },
+        { letter: "I", text: "nspiração em cada lugar," },
+        { letter: "A", text: "braço quente a me envolver," },
+        { letter: "J", text: "ornada leve, cheia de cor," },
+        { letter: "A", text: "qui a vida tem outro sabor," },
+        { letter: "R", text: "ealidade e sonho a se misturar," },
+        { letter: "A", text: "mor que em ti veio me transformar." },
+        { space: true },
+        { letter: "M", text: "eu paraíso, meu doce lar," },
+        { letter: "E", text: "m cada paisagem, encanto sem fim," },
+        { letter: "U", text: "m pedacinho do céu para amar." },
+        { space: true },
+        { letter: "A", text: "o entardecer, poesia no ar," },
+        { letter: "M", text: "ais bela fase eu vivo aqui," },
+        { letter: "O", text: "nde a felicidade vem me encontrar," },
+        { letter: "R", text: "enovo minha alma e sorrio sem fim." }
+      ]
     }
   ];
 
